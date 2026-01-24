@@ -1,0 +1,977 @@
+[
+  {
+    "id": "Q001",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Nella tecnica di modulazione BSK (detta anche PSK binario), quale codice di linea \\`e utilizzato come modulante?",
+    "choices": [
+      "unipolare",
+      "polare",
+      "bipolare",
+      "nessuna delle tre"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q002",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "A parit\\`a di potenza media per bit, se si vogliono classificare le tecniche di modulazione digitale di seguito elencate in ordine decrescente di prestazioni in termini di BER, quale delle sequenze riportate \\`e corretta?",
+    "choices": [
+      "polare, bipolare, unipolare",
+      "PSK, FSK, ASK",
+      "FSK, PSK, ASK",
+      "ASK, PSK, FSK"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q003",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza del codice di linea unipolare RZ?\n\\[\n\\text{(Scrivi qui la formula)}\\quad \\underline{\\hspace{7cm}}\n\\]",
+    "answer": null,
+    "solution": "$S_{xx}(f)=\\frac{A^{2}T_{B}}{16}\\,\\mathrm{sinc}^{2}\\!\\left(\\frac{fT_{B}}{2}\\right)\\left[1+\\frac{1}{T_{B}}\\sum_{n=-\\infty}^{+\\infty}\\delta\\!\\left(f-\\frac{n}{T_{B}}\\right)\\right]$"
+  },
+  {
+    "id": "Q004",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Il segnale $N(t)$, che ad un generico istante $t$ assume un valore pari al numero di autovetture transitate ad un casello nell'intervallo di tempo $[0,t]$, \\`e:",
+    "choices": [
+      "un segnale periodico",
+      "un segnale continuo nel tempo con ampiezza discreta",
+      "un segnale discreto nel tempo con ampiezza continua",
+      "un segnale digitale"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q005",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "La probabilit\\`a di errore\n\\[\nP_e = Q\\!\\left(\\sqrt{\\frac{S_{\\text{AV}}\\,T_B}{\\eta}}\\right)\n\\]\na quale modulazione corrisponde?",
+    "choices": [
+      "ASK",
+      "PSK",
+      "FSK",
+      "PSK-NC"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q006",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si considerano due sorgenti binarie senza memoria $S_1$ ed $S_2$. $S_2$ emette il simbolo $0$ con probabilit\\`a $P_{S_2}(0)=0{,}3$, mentre $S_1$ emette il simbolo $0$ con probabilit\\`a $P_{S_1}(0)=0{,}5$. Quale tra $S_1$ ed $S_2$ emette maggiore informazione media per simbolo?",
+    "choices": [
+      "$S_1$ emette una maggiore informazione media per simbolo",
+      "$S_2$ emette una maggiore informazione media per simbolo",
+      "per poter rispondere bisogna conoscere anche la probabilit\\`a di emissione del simbolo $1$",
+      "nulla si pu\\`o dire, dipende dalla codifica adottata"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q007",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Una sequenza di bit viene trasmessa sul canale binario simmetrico dopo essere stata codificata con un codice a ripetizione $(3,1)$. La sequenza ricevuta \\`e:\n\\[\n111100001011.\n\\]\nIndicare la decodifica pi\\`u probabile della sequenza ricevuta se la probabilit\\`a di errore del canale $\\varepsilon$ \\`e maggiore di $0{,}5$.\n\\[\n\\text{Decodifica pi\\`u probabile:}\\quad \\underline{\\hspace{7cm}}\n\\]",
+    "answer": null,
+    "solution": "Decodifica più probabile: $1001$ (con $\\varepsilon>0{,}5$ si sceglie la minoranza nei terzetti)."
+  },
+  {
+    "id": "Q008",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Codificare una sequenza di simboli mediante codice a ripetizione permette di:",
+    "choices": [
+      "incrementare l'informazione media per simbolo a valle del codificatore",
+      "decrementare l'informazione media per simbolo a valle del codificatore",
+      "aumentare la capacit\\`a di canale",
+      "introdurre nella sequenza di simboli codificata ridondanza mirata a proteggere l'informazione da essa trasportata"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q009",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "L'operazione di campionamento:\n% =========================\n% Pagina 3\n% =========================",
+    "choices": [
+      "restituisce lo spettro del segnale campionato",
+      "restituisce informazioni simili a quelle ottenibili con la trasformata di Fourier",
+      "restituisce un segnale a tempo discreto i cui valori coincidono con i valori assunti dal segnale campionato negli istanti di campionamento",
+      "nessuna delle affermazioni \\`e vera"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q010",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "In corrispondenza di quali valori della frequenza (tra quelli riportati) si annulla lo spettro di potenza (PSD) del codice di linea unipolare Return-to-Zero (RZ)? (Sia $R_B$ il bitrate.)",
+    "choices": [
+      "$0$",
+      "$\\dfrac{2}{R_B}$",
+      "$R_B$",
+      "due dei tre valori elencati sopra"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q011",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quale delle seguenti espressioni \\textbf{non} \\`e un'espressione valida dell'energia di un segnale $s$?",
+    "choices": [
+      "$\\displaystyle \\int_{-\\infty}^{+\\infty} \\lvert S(f)\\rvert^{2}\\,df$",
+      "$\\displaystyle \\lim_{T\\to\\infty}\\frac{1}{T}\\int_{-T/2}^{+T/2}\\lvert s(t)\\rvert^{2}\\,dt$",
+      "$\\displaystyle \\int_{-\\infty}^{+\\infty} \\lvert s(t)\\rvert^{2}\\,dt$",
+      "nessuna delle espressioni riportate \\`e sbagliata"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q012",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si ha un SLS avente risposta in frequenza\n\\[\nH(f)=4\\,\\mathrm{rect}\\!\\left(\\frac{f}{2B}\\right)\\,e^{-j\\,2\\pi f D}.\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "choices": [
+      "\\`e un sistema che non introduce alcuna distorsione nei segnali che lo attraversano purch\\'e questi abbiano frequenza massima minore di $B$",
+      "\\`e un sistema passo-basso avente banda a $-3\\,\\mathrm{dB}$ uguale a $B$",
+      "\\`e un sistema che non introduce alcuna distorsione nei segnali che lo attraversano",
+      "\\`e un sistema non lineare"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q013",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri il segnale\n\\[\nx(t)=A\\left(1-\\left|\\frac{t}{T}\\right|\\right)\\,\\mathrm{rect}\\!\\left(\\frac{t}{2T}\\right).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "choices": [
+      "\\`e un segnale di energia",
+      "\\`e un segnale di potenza",
+      "\\`e un segnale a banda limitata",
+      "\\`e un segnale aleatorio"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q014",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri il segnale\n\\[\nx(t)=\\sum_{k=-\\infty}^{+\\infty} A\\,\\mathrm{rect}\\!\\left(\\frac{t-kT}{\\tau}\\right),\\qquad \\tau \\ll T.\n\\]\nQuale delle seguenti affermazioni \\textbf{non} \\`e vera?\n% =========================\n% Pagina 4\n% =========================",
+    "choices": [
+      "\\`e un segnale periodico",
+      "ha lo spettro a righe",
+      "\\`e un segnale determinato",
+      "\\`e un segnale a tempo discreto"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q015",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri una sorgente $S$ che emette simboli appartenenti ad un alfabeto $\\mathcal{S}=\\{s_1,s_2,\\dots,s_M\\}$, avente entropia $H(S)=H$ bit/simbolo. Si consideri poi un vettore $\\mathbf{N}=(s_1,s_2,\\dots,s_n)$ costituito da $n$ simboli emessi dalla sorgente di cui sopra, con $n$ sufficientemente grande da poter essere considerato un campione rappresentativo della sorgente. Quale delle seguenti affermazioni \\`e corretta?",
+    "choices": [
+      "per rappresentare il vettore $\\mathbf{N}$ sono necessarie almeno $nH$ cifre binarie",
+      "per rappresentare il vettore $\\mathbf{N}$ sono necessarie almeno $n\\log_2\\!\\left(\\frac{1}{M}\\right)$ cifre binarie, essendo $M$ la dimensione dell'alfabeto di sorgente",
+      "per rappresentare il vettore $\\mathbf{N}$ sono necessarie almeno $n\\log_2(M)$ cifre binarie, essendo $M$ la dimensione dell'alfabeto di sorgente",
+      "per rappresentare il vettore $\\mathbf{N}$ sono necessarie almeno $n$ cifre binarie"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q016",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Dato un sistema avente risposta all'impulso\n\\[\nh(t)=\\frac{1}{T}\\,\\mathrm{rect}\\!\\left(\\frac{t}{T}\\right),\n\\]\nsi pu\\`o affermare che:",
+    "choices": [
+      "il sistema \\`e lineare",
+      "il sistema \\`e causale",
+      "il sistema \\`e senza memoria",
+      "il sistema \\`e stabile in senso BIBO"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q017",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri il segnale $x(t)$ avente trasformata di Fourier $X(f)$. Lo spettro di ampiezza del segnale \\`e definito come:",
+    "choices": [
+      "$\\lvert x(t)\\rvert^{2}$",
+      "$\\lvert X(f)\\rvert^{2}$",
+      "$\\sqrt{\\Re\\{X(f)\\}^{2}+\\Im\\{X(f)\\}^{2}}$",
+      "nessuna delle precedenti"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q018",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si ha un segnale periodico $x(t)$ di periodo $T$ e siano $x_k$ i coefficienti dello sviluppo in serie di Fourier di $x(t)$. L'espressione\n\\[\n\\sum_{k=-\\infty}^{+\\infty} |x_k|^{2}\\,e^{j2\\pi k \\tau/T}\n\\]\n\\`e:\n% =========================\n% Pagina 5\n% =========================",
+    "choices": [
+      "la funzione di autocorrelazione di $x(t)$",
+      "lo sviluppo in serie di Fourier di $x(t)$",
+      "la densit\\`a spettrale di potenza di $x(t)$",
+      "la trasformata continua di Fourier di $x(t)$"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q019",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Qual \\`e l'operazione che si esegue per realizzare una codifica differenziale nella modulazione DPSK? (Sia $b_k$ il bit di dato e $d_k$ il bit codificato.)\n\\[\n\\text{(Scrivi qui l'operazione / formula)}\\quad \\underline{\\hspace{7cm}}\n\\]",
+    "answer": null,
+    "solution": "Codifica differenziale (DPSK): $d_k = b_k \\oplus d_{k-1}$ (somma modulo-2, con $d_0$ fissato)."
+  },
+  {
+    "id": "Q020",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Qual \\`e l'espressione corretta di un segnale digitale modulato utilizzando la tecnica ASK?",
+    "choices": [
+      "$\\displaystyle s(t)=A_c\\,m(t)\\cos(\\omega_c t)$",
+      "$\\displaystyle s(t)=A_c\\,\\cos\\!\\big(m(t)\\,\\omega_c t\\big)$",
+      "$\\displaystyle s(t)=A_c\\,m(t)\\cos\\!\\big(\\omega_c t + D_p\\,m(t)\\big)$",
+      "nessuna \\`e corretta"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q021",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri il segnale periodico\n\\[\nx(t)=\\sum_{k=-\\infty}^{+\\infty}(-1)^k\\,\\mathrm{rect}\\!\\left(\\frac{t-kT}{T}\\right).\n\\]\nQuale delle seguenti affermazioni \\textbf{non} \\`e vera?",
+    "choices": [
+      "ha uno spettro ricco",
+      "la sua trasformata gode di simmetria hermitiana",
+      "\\`e un segnale di energia",
+      "\\`e un segnale a media nulla"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q022",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri un sistema avente risposta all'impulso\n\\[\nh_B(t)=A\\left(1-\\left|\\frac{t}{T}\\right|\\right)\\,\\mathrm{rect}\\!\\left(\\frac{t}{2T}\\right).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "choices": [
+      "\\`e un sistema causale",
+      "\\`e un sistema passa-basso",
+      "la banda del sistema dipende da $T$",
+      "nessuna delle affermazioni \\`e vera"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q023",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri il segnale\n\\[\nx(t)=A\\,\\mathrm{rect}\\!\\left(\\frac{t}{T}\\right).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "choices": [
+      "\\`e un segnale a durata finita",
+      "\\`e un segnale di potenza e la sua potenza media \\`e $A^2T$",
+      "\\`e un segnale periodico",
+      "non si pu\\`o dire nulla su energia e potenza: bisogna calcolare la trasformata di Fourier"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q024",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Il segnale costante $x(t)=5$ \\`e:\n% =========================\n% Pagina 6 (o pagina successiva)\n% =========================",
+    "choices": [
+      "un segnale aleatorio",
+      "un segnale a tempo discreto",
+      "un segnale di energia",
+      "un segnale di potenza"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q025",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Un segnale digitale:",
+    "choices": [
+      "\\`e continuo nel tempo e discreto nelle ampiezze",
+      "\\`e continuo nelle ampiezze e discreto nel tempo",
+      "\\`e discreto nel tempo e nelle ampiezze",
+      "nulla di quanto sopra"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q026",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Sia dato un segnale reale $x(t)$ avente trasformata di Fourier $X(f)$. Quale sar\\`a la trasformata di Fourier di $X(t)$?",
+    "choices": [
+      "bisogna fare i conti",
+      "$x(t)$",
+      "$x(f)$",
+      "$x(-f)$"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q027",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri un sistema caratterizzato dalla relazione ingresso-uscita:\n\\[\ny(t)=(a+bt)\\,x(t).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "choices": [
+      "il sistema \\`e lineare",
+      "il sistema \\`e causale",
+      "il sistema \\`e senza memoria",
+      "il sistema \\`e stazionario"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q028",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri la quantizzazione di un segnale vocale. Quale dei seguenti metodi di quantizzazione \\`e pi\\`u indicato operativamente?",
+    "choices": [
+      "quantizzazione uniforme, $8$ bit/campione",
+      "quantizzazione non uniforme, ampiezze compresse con legge logaritmica, $8$ bit/campione",
+      "quantizzazione non uniforme, ampiezze compresse con legge quadratica, $8$ bit/campione",
+      "quantizzazione non uniforme, $12$ bit/campione"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q029",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Si consideri una sorgente di informazione avente entropia pari a $2{,}8$ bit/simbolo ed emette $4$ simboli al secondo. I simboli della sorgente vengono inviati su un canale di capacit\\`a $C$. Quanto deve essere la capacit\\`a di questo canale affinché sia possibile ridurre a un valore molto piccolo (a piacere) la probabilit\\`a di errore?\n\\[\n\\text{(Scrivi qui i calcoli e il valore minimo di $C$)}\\quad \\underline{\\hspace{6cm}}\n\\]\n% =========================\n% Pagina successiva (dopo D29)\n% =========================",
+    "answer": null,
+    "solution": "$C_{\\min}=H\\cdot R_s=2.8\\cdot 4=11.2\\ \\mathrm{bit/s}$ (hai detto “11,2 kB”: qui interpretato come 11,2 bit/s)."
+  },
+  {
+    "id": "Q030",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quale delle seguenti affermazioni \\`e falsa?",
+    "choices": [
+      "l'intervallo in frequenza che contiene il $99\\%$ di energia di un segnale pu\\`o essere ritenuto la porzione di spettro del segnale",
+      "l'intervallo in frequenza all'interno del quale la risposta in ampiezza di un sistema si mantiene entro i $3\\,\\mathrm{dB}$ del valore massimo pu\\`o essere considerato una buona approssimazione della banda passante del sistema",
+      "l'intervallo in frequenza all'interno del quale la risposta in fase di un sistema si mantiene entro i $3\\,\\mathrm{dB}$ del valore massimo pu\\`o essere considerato una buona approssimazione della banda passante del sistema",
+      "un segnale con banda limitata pari a $B$ Hz avr\\`a durata finita"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q031",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Sia un segnale $x(t)$ avente banda $W$. Si consideri\n\\[\ny(t)=x(t)\\cos\\!\\left(2\\pi f_0 t\\right), \\qquad f_0 \\gg W.\n\\]\nIndicare l'intervallo di frequenze che contiene lo spettro del segnale $y(t)$.\n\\[\n\\text{Intervallo di frequenze:}\\quad \\underline{\\hspace{10cm}}\n\\]",
+    "answer": null,
+    "solution": "Risposta data: $f\\in[f_0-2W,\\ f_0+2W]$ (e simmetricamente attorno a $-f_0$)."
+  },
+  {
+    "id": "Q032",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Dato il segnale\n\\[\nx(t)=\\sum_{k=-\\infty}^{+\\infty}\n\\left(1-\\left|\\frac{2\\,(t-kT)}{\\tau}\\right|\\right)\\,\n\\mathrm{rect}\\!\\left(\\frac{t-kT}{\\tau}\\right),\n\\]\nquale delle seguenti affermazioni \\`e vera?\n% =========================\n% Pagina successiva (dopo D32)\n% =========================",
+    "choices": [
+      "il segnale ha uno spettro ricco",
+      "il segnale ha durata finita",
+      "il segnale ha energia finita",
+      "nessuna delle precedenti"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q033",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Dato il sistema\n\\[\ny(t)=\\frac{1}{T}\\int_{t-T}^{t} x(\\tau)\\,d\\tau,\n\\]\nla risposta in frequenza del sistema \\`e:",
+    "choices": [
+      "il sistema non \\`e lineare e non ammette risposta in frequenza",
+      "il sistema non \\`e stazionario e non ammette risposta in frequenza",
+      "$H(f)=\\dfrac{1}{T}$",
+      "$H(f)=\\dfrac{1}{j\\pi f}\\,\\cos(\\pi f T)\\;+\\;\\frac{2}{T}\\,e^{j\\pi f T}$"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q034",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri l'operazione di quantizzazione di un segnale mediante un quantizzatore uniforme con un numero di bit per rappresentare i valori quantizzati. Quale delle seguenti affermazioni \\textbf{non} \\`e vera?",
+    "choices": [
+      "se il numero dei livelli quantici \\`e elevato, il rapporto segnale-rumore di quantizzazione aumenta di $6$ dB per ogni bit utilizzato per rappresentare i valori quantizzati",
+      "se il numero dei livelli quantici \\`e elevato, il rapporto segnale-rumore di quantizzazione $S/N_Q$ \\`e una funzione esponenziale del numero di bit utilizzato per rappresentare il valore quantizzato",
+      "il rapporto segnale-rumore di quantizzazione $S/N_Q$ dipende dalla dinamica del segnale",
+      "non esiste una relazione generale che leghi il rapporto segnale-rumore di quantizzazione con il numero di bit impiegati nel processo di quantizzazione"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q035",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Scrivere lo spettro (PSD) del codice di linea unipolare RZ.\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]\n% =========================\n% Pagina successiva (dopo D35)\n% =========================",
+    "answer": null,
+    "solution": "Risposta dettata: $\\frac{1}{2}\\left[T_B\\left(\\frac{\\sin(\\pi f T_B)}{\\pi f T_B}\\right)+\\delta(f)\\right]$."
+  },
+  {
+    "id": "Q036",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "A quale tecnica di modulazione digitale corrisponde:\n\\[\nP_e = Q\\!\\left(\\sqrt{\\frac{2\\,S_{\\mathrm{AV}}\\,T_B}{\\eta}}\\right)\\,?\n\\]",
+    "choices": [
+      "ASK",
+      "FSK",
+      "PSK",
+      "nessuna delle precedenti"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q037",
+    "category": "TLC",
+    "type": "open",
+    "statement": "In un impulso a coseno rialzato, a quanto \\`e uguale $\\beta$?\n\\[\n\\text{(Scrivi qui la risposta)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "answer": null,
+    "solution": "Risposta dettata: $\\beta$ compreso tra $0$ e $R_B/2$."
+  },
+  {
+    "id": "Q038",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quale tra le seguenti tecniche di modulazione digitale consente di ottenere una probabilit\\`a di errore $P_e$ pi\\`u bassa?",
+    "choices": [
+      "ASK",
+      "PSK",
+      "FSK",
+      "nessuna delle precedenti"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q039",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quali tra i seguenti codici di linea hanno la propriet\\`a di rendere una componente continua non nulla a prescindere dalla sequenza trasmessa?",
+    "choices": [
+      "unipolare NRZ",
+      "polare NRZ",
+      "Manchester (NRZ)",
+      "pi\\`u di una delle precedenti"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q040",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri il segnale $x(t)=A\\sin(2\\pi f_0 t)$. Quale tra le seguenti affermazioni \\`e vera?",
+    "choices": [
+      "ha uno spettro continuo",
+      "non \\`e possibile calcolare la trasformata di Fourier",
+      "la sua potenza media dipende dalla frequenza",
+      "ha uno spettro a righe"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q041",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Dato un SLS caratterizzato da risposta in frequenza\n\\[\nH(f)=G(f)\\,e^{j\\theta(f)},\n\\]\nquando tale sistema non introduce distorsioni di ampiezza?\n% =========================\n% Pagina successiva (dopo D41)\n% =========================",
+    "choices": [
+      "quando $G(f)=2\\pi k f_0$",
+      "quando $G(f)=K$",
+      "quando $\\theta(f)=2\\pi k f_0$",
+      "introdurr\\`a sempre e comunque distorsioni in ampiezza"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q042",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Si consideri la quantizzazione uniforme di un segnale $x(t)$. Scrivere l'equazione che lega il rapporto segnale-rumore di quantizzazione $(S/N)_Q$ al numero di bit di quantizzazione $b$.\n\\[\n\\text{(Scrivi qui l'equazione)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "answer": null,
+    "solution": "$(S/N)_Q = 2^{2B}$."
+  },
+  {
+    "id": "Q043",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Si consideri la quantizzazione non uniforme di un segnale $x(t)$. Scrivere l'equazione che lega il rapporto segnale-rumore di quantizzazione $(S/N)_Q$ al numero di bit di quantizzazione $b$.\n\\[\n\\text{(Scrivi qui l'equazione)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "answer": null,
+    "solution": "Risposta dettata: $(S/N)_Q = 5 + 6B + L_X$."
+  },
+  {
+    "id": "Q044",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quale delle seguenti affermazioni \\`e corretta in relazione alla quantizzazione non uniforme?",
+    "choices": [
+      "\\`e un processo reversibile",
+      "consente di ottenere un rapporto segnale-rumore di quantizzazione stazionario anche a fronte di segnali con dinamica non stazionaria",
+      "\\`e uno schema di quantizzazione utile per segnali con dinamica stazionaria",
+      "non \\`e adatta alle trasmissioni broadcast"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q045",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Si consideri un segnale $x(t)$. Quale delle seguenti affermazioni \\`e sicuramente falsa?",
+    "choices": [
+      "$\\displaystyle E_x=\\int_{-\\infty}^{+\\infty} x^{2}(t)\\,dt$",
+      "$\\displaystyle E_x=\\int_{-\\infty}^{+\\infty} |X(f)|^{2}\\,df$",
+      "$\\displaystyle E_x=\\int_{-\\infty}^{+\\infty}\\int_{-\\infty}^{+\\infty} R_{xx}(\\tau)\\,e^{-j2\\pi f\\tau}\\,d\\tau\\,df$",
+      "$\\displaystyle E_x=\\int_{-\\infty}^{+\\infty} x(t)\\,e^{-j2\\pi f t}\\,dt$"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q046",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quale delle seguenti affermazioni \\`e sicuramente falsa?",
+    "choices": [
+      "$\\mathcal{F}\\{\\delta(t)\\}=1$",
+      "$\\mathcal{F}\\{\\delta(t)\\,u(t-3)\\}=u(3)$",
+      "$\\mathcal{F}\\{\\delta(t)*u(t-3)\\}=u(f-3)$",
+      "$\\mathcal{F}\\{\\delta(t-3)\\}=e^{-j6\\pi f}$"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q047",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Se un sistema \\`e caratterizzato dalla seguente relazione ingresso-uscita:\n\\[\ny(t)=\\int_{-\\infty}^{t} x(\\tau)\\,d\\tau,\n\\]\nquale delle seguenti affermazioni \\`e falsa?\n% =========================\n% Pagina successiva (dopo D47)\n% =========================",
+    "choices": [
+      "il sistema \\`e lineare",
+      "il sistema \\`e causale",
+      "il sistema \\`e senza memoria",
+      "il sistema \\`e stazionario"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q048",
+    "category": "TLC",
+    "type": "mcq_multi",
+    "statement": "Si consideri la quantizzazione uniforme di un segnale $x(t)$ a media nulla. Quale tra le seguenti espressioni rappresenta meglio il rapporto segnale-rumore di quantizzazione?",
+    "choices": [
+      "$\\displaystyle \\left(\\frac{S}{N}\\right)_Q = Q^{2}$, essendo $Q$ il numero di intervalli quantici del quantizzatore",
+      "$\\displaystyle \\left(\\frac{S}{N}\\right)_Q = 12\\,\\Delta^{2}$, essendo $\\Delta$ il passo di quantizzazione",
+      "$\\displaystyle \\left(\\frac{S}{N}\\right)_Q \\approx 2^{2B}$, essendo $B$ il numero di bit di quantizzazione",
+      "nessuna delle precedenti"
+    ],
+    "answer": [
+      "a",
+      "c"
+    ],
+    "solution": "Risposta dettata: A e C (domanda a scelta multipla)."
+  },
+  {
+    "id": "Q049",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "In un diagramma ad occhio (eye pattern), cosa indica l'altezza dell'apertura dell'occhio?",
+    "choices": [
+      "il margine di errore",
+      "il margine di distorsione",
+      "la massima distorsione",
+      "nessuna delle precedenti \\`e corretta"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q050",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quale tra le seguenti espressioni indica la probabilit\\`a di errore di un sistema binario in banda base operante su un canale AWGN con densit\\`a spettrale di potenza pari a $\\eta/2$ alla velocit\\`a di cifra $R_B$?",
+    "choices": [
+      "$\\displaystyle P_e = Q\\!\\left(\\sqrt{\\frac{2\\,S_T}{\\eta\\,T_B}}\\right)$",
+      "$\\displaystyle P_e = Q\\!\\left(\\frac{\\pi}{4}\\sqrt{\\frac{2\\,S_T\\,T_B}{\\eta}}\\right)$",
+      "$\\displaystyle P_e = Q\\!\\left(\\sqrt{\\frac{2\\,S_T\\,T_B}{\\eta}}\\right)$",
+      "$\\displaystyle P_e = Q\\!\\left(\\sqrt{\\frac{2\\,T_B}{\\eta\\,S_T}}\\right)$"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q051",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Dall'analisi delle funzioni di autocorrelazione dei segnali $x(t)$ e $y(t)$ sopra riportate, si pu\\`o concludere che:\n% =========================\n% Pagina successiva (dopo D51)\n% =========================",
+    "choices": [
+      "il segnale $x(t)$ ha una durata maggiore del segnale $y(t)$",
+      "il segnale $y(t)$ ha una banda maggiore del segnale $x(t)$",
+      "il segnale $x(t)$ ha una banda maggiore del segnale $y(t)$",
+      "non si pu\\`o dire nulla sulla banda: bisogna calcolare la trasformata di Fourier"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q052",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "Quale delle seguenti affermazioni pu\\`o essere detta osservando la densit\\`a spettrale di potenza del segnale $x(t)$ sopra riportata?",
+    "choices": [
+      "tutte le componenti armoniche del segnale sono significative e il segnale \\`e a banda illimitata",
+      "solo le componenti armoniche sopra i $2000$ Hz sono significative",
+      "le componenti significative del segnale sono nell'intervallo $[0;\\,2000]$ Hz",
+      "nessuna tra quelle riportate"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q053",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Utilizzando quale frequenza si \\`e ottenuto di minimizzare il fenomeno dell'aliasing?\n\\[\nf_s = \\underline{\\hspace{6cm}}\n\\]",
+    "answer": null,
+    "solution": "Risposta dettata: $f_A$."
+  },
+  {
+    "id": "Q054",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea \\textbf{polare NRZ}?\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "answer": null,
+    "solution": "Risposta dettata (polare NRZ): $S_{xx}(f)=A^2\\,T_B\\,\\mathrm{sinc}^2(fT_B)$."
+  },
+  {
+    "id": "Q055",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea \\textbf{unipolare NRZ}?\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "answer": null,
+    "solution": "Risposta dettata (unipolare NRZ): $S_{xx}(f)=\\frac{A^2T_B}{4}\\,\\mathrm{sinc}^2(fT_B)\\left[1+\\frac{1}{T_B}\\delta(f)\\right]$."
+  },
+  {
+    "id": "Q056",
+    "category": "TLC",
+    "type": "open",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea \\textbf{Manchester NRZ}?\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]\n% =========================\n% Sezione MATLAB (dopo D56)\n% =========================",
+    "answer": null,
+    "solution": "Risposta dettata (Manchester NRZ): $S_{xx}(f)=A^2T_B\\,\\mathrm{sinc}^2\\!\\left(\\frac{fT_B}{2}\\right)\\sin^2\\!\\left(\\pi f\\frac{T_B}{2}\\right)$."
+  },
+  {
+    "id": "Q057",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato un segnale descritto dai vettori $(n_x,x)$ (con $n_x$ variabile indipendente), il segnale traslato di tre campioni a sinistra si definisce tramite la seguente coppia di vettori:",
+    "choices": [
+      "$n_y = n_x,\\quad y = x-3$",
+      "$n_y = n_x-3,\\quad y = x$",
+      "$n_y = n_x+3,\\quad y = x$",
+      "$n_y = n_x,\\quad y = x+3$"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q058",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Per creare un vettore colonna di tutti $0$, di dimensione pari al vettore \\texttt{A}, si deve scrivere la seguente istruzione:",
+    "choices": [
+      "\\texttt{zeros(A,1)}",
+      "\\texttt{zeros(length(A),1)}",
+      "\\texttt{zeros(1,A)}",
+      "\\texttt{zeros(1,length(A))}"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q059",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Per creare un vettore riga di tutti $0$, di dimensione pari al vettore \\texttt{A}, si deve scrivere la seguente istruzione:",
+    "choices": [
+      "\\texttt{zeros(A,1)}",
+      "\\texttt{zeros(length(A),1)}",
+      "\\texttt{zeros(1,A)}",
+      "\\texttt{zeros(1,length(A))}"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q060",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato un vettore \\texttt{A} di dimensione $1\\times 1000$ all'interno del quale sono memorizzati i campioni di un segnale, per estrarre i primi $100$ campioni:",
+    "choices": [
+      "\\texttt{A(1,100)}",
+      "\\texttt{A(1:100)}",
+      "\\texttt{A(0100)}",
+      "\\texttt{A(1)*A(100)}"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q061",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Un filtro a media mobile di durata $0{,}3$ s, considerando un passo di campionamento di $5$ ms, pu\\`o essere definito come:\n% =========================\n% Sezione MATLAB (continua dopo D61)\n% =========================",
+    "choices": [
+      "\\texttt{ones(0.3/0.5)}",
+      "\\texttt{filt(0.3,0.5)}",
+      "\\texttt{ones(1,0.3/0.5)}",
+      "\\texttt{ones(1,0.3/0.5)/0.3}"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q062",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dati due segnali \\texttt{s1} e \\texttt{s2} definiti nell'intervallo \\texttt{0:0.01:5}, l'istruzione corretta per calcolare la convoluzione di due segnali \\`e:",
+    "choices": [
+      "\\texttt{conv(s1*s2)}",
+      "\\texttt{conv(s1,s2)*0.01}",
+      "\\texttt{conv(s1,s2)}",
+      "\\texttt{convv(s1*s2)*0.01}"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q063",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato il vettore \\texttt{a = [2 3 5 7 1 9]}, l'istruzione \\texttt{find(a>4 \\& a<8)} restituisce:",
+    "choices": [
+      "\\texttt{[3 4]}",
+      "\\texttt{[5 7]}",
+      "\\texttt{[2 3]}",
+      "\\texttt{[3 5 7]}"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q064",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Il segnale di convoluzione di due funzioni \\texttt{rect} definite nell'intervallo \\texttt{0:0.02:5} \\`e definito nell'intervallo:",
+    "choices": [
+      "\\texttt{0:0.2:10}",
+      "\\texttt{0:0.2:5}",
+      "\\texttt{0:0.4:10}",
+      "\\texttt{0:10}"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q065",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "La prima riga del file che definisce la funzione denominata \\texttt{compute}, che accetta tre parametri in input e genera due parametri in output, \\`e:",
+    "choices": [
+      "\\texttt{[a b c] = compute(d,e)}",
+      "\\texttt{[a,b] = compute(c,d,e)}",
+      "\\texttt{function [a,b,c] = compute(d,e)}",
+      "\\texttt{function [a,b] = compute(c,d,e)}"
+    ],
+    "answer": "d",
+    "solution": ""
+  },
+  {
+    "id": "Q066",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato un vettore \\texttt{a} che rappresenta $500$ campioni di un segnale, per estrarre i campioni che vanno dal $10$ al $100$ si scrive:\n% =========================\n% Sezione MATLAB (continua dopo D66)\n% =========================",
+    "choices": [
+      "\\texttt{a(10:100)}",
+      "\\texttt{a(10):a(100)}",
+      "\\texttt{a(10,100,500)}",
+      "\\texttt{a(10,100)}"
+    ],
+    "answer": "a",
+    "solution": ""
+  },
+  {
+    "id": "Q067",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato il segnale descritto dai vettori $(n_x,x)$ (con $n_x$ variabile indipendente e $x$ variabile dipendente), il segnale descritto dai vettori $n_y=n_x$ e $y=5x$ ha subito l'operazione di:",
+    "choices": [
+      "traslazione di $5$ campioni in avanti",
+      "traslazione di $5$ campioni indietro",
+      "cambiamento di scala lungo le ampiezze",
+      "cambiamento di scala sull'asse dei tempi"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q068",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Per cercare gli indici del vettore \\texttt{X} in corrispondenza dei quali si hanno valori minori di $0$, bisogna calcolare:",
+    "choices": [
+      "\\texttt{find(X)<0}",
+      "\\texttt{find(X<0)}",
+      "\\texttt{find(X>0)}",
+      "\\texttt{find = X<0}"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q069",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Un disturbo con distribuzione normale in funzione della variabile indipendente \\texttt{T}, media $0$ e varianza $5$, pu\\`o essere rappresentato come:",
+    "choices": [
+      "\\texttt{randn(1)*sqrt(2)}",
+      "\\texttt{randn(size(T))*sqrt(2)}",
+      "\\texttt{randn(size(T))*sqrt(2)}",
+      "\\texttt{rand(size(T))*sqrt(2)}"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q070",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Perch\\'e l'istruzione \\texttt{plot(X,A)} venga correttamente eseguita:",
+    "choices": [
+      "\\texttt{A} pu\\`o essere una matrice di dimensione qualsiasi",
+      "\\texttt{A} deve essere un vettore della stessa dimensione di \\texttt{X}",
+      "\\texttt{A} \\`e una matrice avente una dimensione congruente con la dimensione di \\texttt{X}",
+      "nessuna delle precedenti"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q071",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato un segnale descritto dai vettori $(n_y,y)$, la sua trasformata di Fourier centrata in $0$ si calcola come:",
+    "choices": [
+      "\\texttt{fftshift(fft(ny))}",
+      "\\texttt{fft(ny)}",
+      "\\texttt{fft(y)}",
+      "\\texttt{fftshift(fft(y))}"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+  {
+    "id": "Q072",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato un vettore riga x che rappresenta 100 campioni di un segnale, per estrarre i campioni che vanno dal 3 al 60 scriverò:",
+    "choices": [
+      "\\texttt{x(3,60)}",
+      "\\texttt{x(3:60)}",
+      "\\texttt{x(3):x(60)}",
+      "\\texttt{x(3,60,100)}"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q073",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Per creare un vettore colonna di tutti $1$ di dimensione pari al vettore \\texttt{x}, si deve scrivere la seguente istruzione:",
+    "choices": [
+      "\\texttt{ones(1,x)}",
+      "\\texttt{ones(1,length(x))}",
+      "\\texttt{ones(x,1)}",
+      "\\texttt{ones(length(x),1)}"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q074",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato il vettore \\texttt{A = [2 13 4 7 1 8]}, l'istruzione \\texttt{find(A>=8)} restituisce:",
+    "choices": [
+      "\\texttt{[2]}",
+      "\\texttt{[2 6]}",
+      "\\texttt{[13 8]}",
+      "\\texttt{[13]}"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+  {
+    "id": "Q075",
+    "category": "MATLAB",
+    "type": "mcq",
+    "statement": "Dato il segnale descritto dai vettori (ny,y) (con ny variabile indipendente e y variabile dipendente), la sua trasformata di Fourier centrata in 1/(2T) si calcola come:",
+    "choices": [
+      "\\texttt{fftshift(fft(ny))}",
+      "\\texttt{fft(ny)}",
+      "\\texttt{fft(y)}",
+      "\\texttt{fftshift(fft(y))}"
+    ],
+    "answer": "d",
+    "solution": ""
+  }
+]

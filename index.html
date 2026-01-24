@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TLC Quiz</title>
+
+  <!-- MathJax per LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)'], ['$', '$']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 24px auto; padding: 0 16px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    button { padding:10px 14px; cursor:pointer; }
+    .card { border:1px solid #ddd; border-radius:10px; padding:16px; margin:14px 0; }
+    .choice { display:block; padding:8px 10px; border:1px solid #eee; border-radius:8px; margin:8px 0; cursor:pointer; }
+    .choice.correct { border-color: #3bb54a; background:#eaffee; }
+    .choice.wrong { border-color: #d33; background:#ffecec; }
+    .meta { color:#666; font-size: 0.9em; }
+    .sol { margin-top:10px; padding:10px; background:#f7f7f7; border-radius:8px; display:none; }
+    input[type="number"]{ width:120px; padding:8px; }
+  </style>
+</head>
+<body>
+  <h1>Quiz TLC + MATLAB</h1>
+
+  <div class="row">
+    <button id="gen">Genera quiz (20 TLC + 10 MATLAB)</button>
+    <label>Seed:
+      <input id="seed" type="number" placeholder="opzionale">
+    </label>
+    <button id="toggleSolutions">Mostra/Nascondi soluzioni</button>
+  </div>
+
+  <div id="app"></div>
+
+<script>
+const app = document.getElementById('app');
+let showSolutions = false;
+
+document.getElementById('toggleSolutions').onclick = () => {
+  showSolutions = !showSolutions;
+  document.querySelectorAll('.sol').forEach(el => el.style.display = showSolutions ? 'block' : 'none');
+};
+
+function rng(seed){
+  // RNG deterministico semplice
+  let s = seed ?? Math.floor(Math.random()*1e9);
+  return () => (s = (s*1664525 + 1013904223) % 4294967296) / 4294967296;
+}
+
+function sample(arr, n, r){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(r()*(i+1));
+    [a[i],a[j]] = [a[j],a[i]];
+  }
+  return a.slice(0,n);
+}
+
+function shuffleWithAnswer(choices, answer, r){
+  const letters = ['a','b','c','d'];
+  const idx = choices.map((_,i)=>i);
+  for(let i=idx.length-1;i>0;i--){
+    const j = Math.floor(r()*(i+1));
+    [idx[i],idx[j]] = [idx[j],idx[i]];
+  }
+  const newChoices = idx.map(i => choices[i]);
+
+  const mapOldToNew = new Map();
+  idx.forEach((oldIndex, newIndex)=> mapOldToNew.set(oldIndex, newIndex));
+
+  let newAnswer = answer;
+  if (Array.isArray(answer)) {
+    newAnswer = answer.map(a => letters[mapOldToNew.get(letters.indexOf(a))]).sort();
+  } else if (typeof answer === 'string') {
+    newAnswer = letters[mapOldToNew.get(letters.indexOf(answer))];
+  }
+  return { newChoices, newAnswer };
+}
+
+function renderQuiz(quiz, r){
+  app.innerHTML = "";
+  quiz.forEach((q, qi) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.textContent = `Q${qi+1} · ${q.id} · ${q.category}`;
+    card.appendChild(meta);
+
+    const st = document.createElement('div');
+    st.innerHTML = q.statement;
+    card.appendChild(st);
+
+    const sol = document.createElement('div');
+    sol.className = 'sol';
+    sol.innerHTML = `<b>Soluzione:</b> ${q.solution ?? ''}`;
+    sol.style.display = showSolutions ? 'block' : 'none';
+
+    if (q.type === 'mcq' || q.type === 'mcq_multi') {
+      const letters = ['a','b','c','d'];
+      const { newChoices, newAnswer } = shuffleWithAnswer(q.choices, q.answer, r);
+
+      const chosen = new Set();
+      newChoices.forEach((c, i) => {
+        const opt = document.createElement('div');
+        opt.className = 'choice';
+        opt.innerHTML = `<b>${letters[i]})</b> ${c}`;
+
+        opt.onclick = () => {
+          const isMulti = (q.type === 'mcq_multi');
+          if (!isMulti) {
+            // reset
+            card.querySelectorAll('.choice').forEach(x => x.classList.remove('correct','wrong'));
+          }
+
+          const user = letters[i];
+          let ok = false;
+
+          if (Array.isArray(newAnswer)) {
+            // multi: accumula e valuta quando clicchi (semplice)
+            if (chosen.has(user)) chosen.delete(user); else chosen.add(user);
+            const userArr = Array.from(chosen).sort();
+            ok = JSON.stringify(userArr) === JSON.stringify(newAnswer);
+            // evidenzia scelte
+            card.querySelectorAll('.choice').forEach((x, k)=>{
+              const l = letters[k];
+              x.classList.toggle('wrong', chosen.has(l) && !newAnswer.includes(l));
+              x.classList.toggle('correct', newAnswer.includes(l) && chosen.has(l));
+            });
+          } else {
+            ok = (user === newAnswer);
+            opt.classList.add(ok ? 'correct' : 'wrong');
+            // evidenzia corretta
+            if (!ok) {
+              const k = letters.indexOf(newAnswer);
+              card.querySelectorAll('.choice')[k].classList.add('correct');
+            }
+          }
+          if (!card.contains(sol)) card.appendChild(sol);
+          MathJax.typesetPromise();
+        };
+
+        card.appendChild(opt);
+      });
+
+      card.appendChild(sol);
+    } else {
+      const input = document.createElement('input');
+      input.placeholder = "Risposta...";
+      input.style.width = "100%";
+      input.style.padding = "10px";
+      input.style.marginTop = "10px";
+      card.appendChild(input);
+      card.appendChild(sol);
+    }
+
+    app.appendChild(card);
+  });
+
+  MathJax.typesetPromise();
+}
+
+document.getElementById('gen').onclick = async () => {
+  const seedVal = document.getElementById('seed').value;
+  const r = rng(seedVal ? parseInt(seedVal,10) : null);
+
+  const res = await fetch('./questions.json');
+  const bank = await res.json();
+
+  const tlc = bank.filter(q => q.category === 'TLC');
+  const mat = bank.filter(q => q.category === 'MATLAB');
+
+  const quiz = sample(tlc, 20, r).concat(sample(mat, 10, r));
+  // shuffle quiz order
+  const shuffled = sample(quiz, quiz.length, r);
+
+  renderQuiz(shuffled, r);
+};
+</script>
+</body>
+</html>
+

@@ -31,9 +31,9 @@
     "id": "Q003",
     "category": "TLC",
     "type": "open",
-    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza del codice di linea unipolare RZ?\n\\[\n\\text{(Scrivi qui la formula)}\\quad \\underline{\\hspace{7cm}}\n\\]",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza del codice di linea unipolare RZ?",
     "answer": null,
-    "solution": "$S_{xx}(f)=\\frac{A^{2}T_{B}}{16}\\,\\mathrm{sinc}^{2}\\!\\left(\\frac{fT_{B}}{2}\\right)\\left[1+\\frac{1}{T_{B}}\\sum_{n=-\\infty}^{+\\infty}\\delta\\!\\left(f-\\frac{n}{T_{B}}\\right)\\right]$"
+    "solution": "$S_{xx}(f)=\\frac{A^{2}T_{B}}{16}\\,sinc^{2}\\!\\left(\\frac{fT_{B}}{2}\\right)\\left[1+\\frac{1}{T_{B}}\\sum_{n=-\\infty}^{+\\infty}\\delta\\!\\left(f-\\frac{n}{T_{B}}\\right)\\right]$"
   },
   {
     "id": "Q004",
@@ -53,7 +53,7 @@
     "id": "Q005",
     "category": "TLC",
     "type": "mcq",
-    "statement": "La probabilit\\`a di errore\n\\[\nP_e = Q\\!\\left(\\sqrt{\\frac{S_{\\text{AV}}\\,T_B}{\\eta}}\\right)\n\\]\na quale modulazione corrisponde?",
+    "statement": "La probabilit\\`a di errore\n$$ P_e = Q\\!\\left(\\sqrt{\\frac{S_{AV}\\,T_B}{\\eta}}\\right) $$\na quale modulazione corrisponde?",
     "choices": [
       "ASK",
       "PSK",
@@ -81,7 +81,7 @@
     "id": "Q007",
     "category": "TLC",
     "type": "open",
-    "statement": "Una sequenza di bit viene trasmessa sul canale binario simmetrico dopo essere stata codificata con un codice a ripetizione $(3,1)$. La sequenza ricevuta \\`e:\n\\[\n111100001011.\n\\]\nIndicare la decodifica pi\\`u probabile della sequenza ricevuta se la probabilit\\`a di errore del canale $\\varepsilon$ \\`e maggiore di $0{,}5$.\n\\[\n\\text{Decodifica pi\\`u probabile:}\\quad \\underline{\\hspace{7cm}}\n\\]",
+    "statement": "Una sequenza di bit viene trasmessa sul canale binario simmetrico dopo essere stata codificata con un codice a ripetizione $(3,1)$. La sequenza ricevuta \\`e:",
     "answer": null,
     "solution": "Decodifica più probabile: $1001$ (con $\\varepsilon>0{,}5$ si sceglie la minoranza nei terzetti)."
   },
@@ -103,7 +103,7 @@
     "id": "Q009",
     "category": "TLC",
     "type": "mcq",
-    "statement": "L'operazione di campionamento:\n% =========================\n% Pagina 3\n% =========================",
+    "statement": "L'operazione di campionamento:",
     "choices": [
       "restituisce lo spettro del segnale campionato",
       "restituisce informazioni simili a quelle ottenibili con la trasformata di Fourier",
@@ -131,7 +131,7 @@
     "id": "Q011",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Quale delle seguenti espressioni \\textbf{non} \\`e un'espressione valida dell'energia di un segnale $s$?",
+    "statement": "Quale delle seguenti espressioni <b>non</b> \\`e un'espressione valida dell'energia di un segnale $s$?",
     "choices": [
       "$\\displaystyle \\int_{-\\infty}^{+\\infty} \\lvert S(f)\\rvert^{2}\\,df$",
       "$\\displaystyle \\lim_{T\\to\\infty}\\frac{1}{T}\\int_{-T/2}^{+T/2}\\lvert s(t)\\rvert^{2}\\,dt$",
@@ -145,10 +145,10 @@
     "id": "Q012",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si ha un SLS avente risposta in frequenza\n\\[\nH(f)=4\\,\\mathrm{rect}\\!\\left(\\frac{f}{2B}\\right)\\,e^{-j\\,2\\pi f D}.\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "statement": "Si ha un SLS avente risposta in frequenza\n$$ H(f)=4\\,rect\\!\\left(\\frac{f}{2B}\\right)\\,e^{-j\\,2\\pi f D}. $$\nQuale delle seguenti affermazioni \\`e vera?",
     "choices": [
       "\\`e un sistema che non introduce alcuna distorsione nei segnali che lo attraversano purch\\'e questi abbiano frequenza massima minore di $B$",
-      "\\`e un sistema passo-basso avente banda a $-3\\,\\mathrm{dB}$ uguale a $B$",
+      "\\`e un sistema passo-basso avente banda a $-3\\,dB$ uguale a $B$",
       "\\`e un sistema che non introduce alcuna distorsione nei segnali che lo attraversano",
       "\\`e un sistema non lineare"
     ],
@@ -159,7 +159,7 @@
     "id": "Q013",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri il segnale\n\\[\nx(t)=A\\left(1-\\left|\\frac{t}{T}\\right|\\right)\\,\\mathrm{rect}\\!\\left(\\frac{t}{2T}\\right).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "statement": "Si consideri il segnale\n$$ x(t)=A\\left(1-\\left|\\frac{t}{T}\\right|\\right)\\,rect\\!\\left(\\frac{t}{2T}\\right). $$\nQuale delle seguenti affermazioni \\`e vera?",
     "choices": [
       "\\`e un segnale di energia",
       "\\`e un segnale di potenza",
@@ -173,7 +173,7 @@
     "id": "Q014",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri il segnale\n\\[\nx(t)=\\sum_{k=-\\infty}^{+\\infty} A\\,\\mathrm{rect}\\!\\left(\\frac{t-kT}{\\tau}\\right),\\qquad \\tau \\ll T.\n\\]\nQuale delle seguenti affermazioni \\textbf{non} \\`e vera?\n% =========================\n% Pagina 4\n% =========================",
+    "statement": "Si consideri il segnale\n$$ x(t)=\\sum_{k=-\\infty}^{+\\infty} A\\,rect\\!\\left(\\frac{t-kT}{\\tau}\\right),\\qquad \\tau \\ll T. $$\nQuale delle seguenti affermazioni <b>non</b> \\`e vera?",
     "choices": [
       "\\`e un segnale periodico",
       "ha lo spettro a righe",
@@ -201,7 +201,7 @@
     "id": "Q016",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Dato un sistema avente risposta all'impulso\n\\[\nh(t)=\\frac{1}{T}\\,\\mathrm{rect}\\!\\left(\\frac{t}{T}\\right),\n\\]\nsi pu\\`o affermare che:",
+    "statement": "Dato un sistema avente risposta all'impulso\n$$ h(t)=\\frac{1}{T}\\,rect\\!\\left(\\frac{t}{T}\\right), $$\nsi pu\\`o affermare che:",
     "choices": [
       "il sistema \\`e lineare",
       "il sistema \\`e causale",
@@ -229,7 +229,7 @@
     "id": "Q018",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si ha un segnale periodico $x(t)$ di periodo $T$ e siano $x_k$ i coefficienti dello sviluppo in serie di Fourier di $x(t)$. L'espressione\n\\[\n\\sum_{k=-\\infty}^{+\\infty} |x_k|^{2}\\,e^{j2\\pi k \\tau/T}\n\\]\n\\`e:\n% =========================\n% Pagina 5\n% =========================",
+    "statement": "Si ha un segnale periodico $x(t)$ di periodo $T$ e siano $x_k$ i coefficienti dello sviluppo in serie di Fourier di $x(t)$. L'espressione\n$$ \\sum_{k=-\\infty}^{+\\infty} |x_k|^{2}\\,e^{j2\\pi k \\tau/T} $$\n\\`e:",
     "choices": [
       "la funzione di autocorrelazione di $x(t)$",
       "lo sviluppo in serie di Fourier di $x(t)$",
@@ -243,7 +243,7 @@
     "id": "Q019",
     "category": "TLC",
     "type": "open",
-    "statement": "Qual \\`e l'operazione che si esegue per realizzare una codifica differenziale nella modulazione DPSK? (Sia $b_k$ il bit di dato e $d_k$ il bit codificato.)\n\\[\n\\text{(Scrivi qui l'operazione / formula)}\\quad \\underline{\\hspace{7cm}}\n\\]",
+    "statement": "Qual \\`e l'operazione che si esegue per realizzare una codifica differenziale nella modulazione DPSK? (Sia $b_k$ il bit di dato e $d_k$ il bit codificato.)",
     "answer": null,
     "solution": "Codifica differenziale (DPSK): $d_k = b_k \\oplus d_{k-1}$ (somma modulo-2, con $d_0$ fissato)."
   },
@@ -265,7 +265,7 @@
     "id": "Q021",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri il segnale periodico\n\\[\nx(t)=\\sum_{k=-\\infty}^{+\\infty}(-1)^k\\,\\mathrm{rect}\\!\\left(\\frac{t-kT}{T}\\right).\n\\]\nQuale delle seguenti affermazioni \\textbf{non} \\`e vera?",
+    "statement": "Si consideri il segnale periodico\n$$ x(t)=\\sum_{k=-\\infty}^{+\\infty}(-1)^k\\,rect\\!\\left(\\frac{t-kT}{T}\\right). $$\nQuale delle seguenti affermazioni <b>non</b> \\`e vera?",
     "choices": [
       "ha uno spettro ricco",
       "la sua trasformata gode di simmetria hermitiana",
@@ -279,7 +279,7 @@
     "id": "Q022",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri un sistema avente risposta all'impulso\n\\[\nh_B(t)=A\\left(1-\\left|\\frac{t}{T}\\right|\\right)\\,\\mathrm{rect}\\!\\left(\\frac{t}{2T}\\right).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "statement": "Si consideri un sistema avente risposta all'impulso\n$$ h_B(t)=A\\left(1-\\left|\\frac{t}{T}\\right|\\right)\\,rect\\!\\left(\\frac{t}{2T}\\right). $$\nQuale delle seguenti affermazioni \\`e vera?",
     "choices": [
       "\\`e un sistema causale",
       "\\`e un sistema passa-basso",
@@ -293,7 +293,7 @@
     "id": "Q023",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri il segnale\n\\[\nx(t)=A\\,\\mathrm{rect}\\!\\left(\\frac{t}{T}\\right).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "statement": "Si consideri il segnale\n$$ x(t)=A\\,rect\\!\\left(\\frac{t}{T}\\right). $$\nQuale delle seguenti affermazioni \\`e vera?",
     "choices": [
       "\\`e un segnale a durata finita",
       "\\`e un segnale di potenza e la sua potenza media \\`e $A^2T$",
@@ -307,7 +307,7 @@
     "id": "Q024",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Il segnale costante $x(t)=5$ \\`e:\n% =========================\n% Pagina 6 (o pagina successiva)\n% =========================",
+    "statement": "Il segnale costante $x(t)=5$ \\`e:",
     "choices": [
       "un segnale aleatorio",
       "un segnale a tempo discreto",
@@ -349,7 +349,7 @@
     "id": "Q027",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri un sistema caratterizzato dalla relazione ingresso-uscita:\n\\[\ny(t)=(a+bt)\\,x(t).\n\\]\nQuale delle seguenti affermazioni \\`e vera?",
+    "statement": "Si consideri un sistema caratterizzato dalla relazione ingresso-uscita:\n$$ y(t)=(a+bt)\\,x(t). $$\nQuale delle seguenti affermazioni \\`e vera?",
     "choices": [
       "il sistema \\`e lineare",
       "il sistema \\`e causale",
@@ -377,9 +377,9 @@
     "id": "Q029",
     "category": "TLC",
     "type": "open",
-    "statement": "Si consideri una sorgente di informazione avente entropia pari a $2{,}8$ bit/simbolo ed emette $4$ simboli al secondo. I simboli della sorgente vengono inviati su un canale di capacit\\`a $C$. Quanto deve essere la capacit\\`a di questo canale affinché sia possibile ridurre a un valore molto piccolo (a piacere) la probabilit\\`a di errore?\n\\[\n\\text{(Scrivi qui i calcoli e il valore minimo di $C$)}\\quad \\underline{\\hspace{6cm}}\n\\]\n% =========================\n% Pagina successiva (dopo D29)\n% =========================",
+    "statement": "Si consideri una sorgente di informazione avente entropia pari a $2{,}8$ bit/simbolo ed emette $4$ simboli al secondo. I simboli della sorgente vengono inviati su un canale di capacit\\`a $C$. Quanto deve essere la capacit\\`a di questo canale affinché sia possibile ridurre a un valore molto piccolo (a piacere) la probabilit\\`a di errore?",
     "answer": null,
-    "solution": "$C_{\\min}=H\\cdot R_s=2.8\\cdot 4=11.2\\ \\mathrm{bit/s}$ (hai detto “11,2 kB”: qui interpretato come 11,2 bit/s)."
+    "solution": "$C_{\\min}=H\\cdot R_s=2.8\\cdot 4=11.2\\ bit/s$ (hai detto “11,2 kB”: qui interpretato come 11,2 bit/s)."
   },
   {
     "id": "Q030",
@@ -387,9 +387,9 @@
     "type": "mcq",
     "statement": "Quale delle seguenti affermazioni \\`e falsa?",
     "choices": [
-      "l'intervallo in frequenza che contiene il $99\\%$ di energia di un segnale pu\\`o essere ritenuto la porzione di spettro del segnale",
-      "l'intervallo in frequenza all'interno del quale la risposta in ampiezza di un sistema si mantiene entro i $3\\,\\mathrm{dB}$ del valore massimo pu\\`o essere considerato una buona approssimazione della banda passante del sistema",
-      "l'intervallo in frequenza all'interno del quale la risposta in fase di un sistema si mantiene entro i $3\\,\\mathrm{dB}$ del valore massimo pu\\`o essere considerato una buona approssimazione della banda passante del sistema",
+      "l'intervallo in frequenza che contiene il $99\\",
+      "l'intervallo in frequenza all'interno del quale la risposta in ampiezza di un sistema si mantiene entro i $3\\,dB$ del valore massimo pu\\`o essere considerato una buona approssimazione della banda passante del sistema",
+      "l'intervallo in frequenza all'interno del quale la risposta in fase di un sistema si mantiene entro i $3\\,dB$ del valore massimo pu\\`o essere considerato una buona approssimazione della banda passante del sistema",
       "un segnale con banda limitata pari a $B$ Hz avr\\`a durata finita"
     ],
     "answer": "c",
@@ -399,7 +399,7 @@
     "id": "Q031",
     "category": "TLC",
     "type": "open",
-    "statement": "Sia un segnale $x(t)$ avente banda $W$. Si consideri\n\\[\ny(t)=x(t)\\cos\\!\\left(2\\pi f_0 t\\right), \\qquad f_0 \\gg W.\n\\]\nIndicare l'intervallo di frequenze che contiene lo spettro del segnale $y(t)$.\n\\[\n\\text{Intervallo di frequenze:}\\quad \\underline{\\hspace{10cm}}\n\\]",
+    "statement": "Sia un segnale $x(t)$ avente banda $W$. Si consideri",
     "answer": null,
     "solution": "Risposta data: $f\\in[f_0-2W,\\ f_0+2W]$ (e simmetricamente attorno a $-f_0$)."
   },
@@ -407,7 +407,7 @@
     "id": "Q032",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Dato il segnale\n\\[\nx(t)=\\sum_{k=-\\infty}^{+\\infty}\n\\left(1-\\left|\\frac{2\\,(t-kT)}{\\tau}\\right|\\right)\\,\n\\mathrm{rect}\\!\\left(\\frac{t-kT}{\\tau}\\right),\n\\]\nquale delle seguenti affermazioni \\`e vera?\n% =========================\n% Pagina successiva (dopo D32)\n% =========================",
+    "statement": "Dato il segnale\n$$ x(t)=\\sum_{k=-\\infty}^{+\\infty}\n\\left(1-\\left|\\frac{2\\,(t-kT)}{\\tau}\\right|\\right)\\,\nrect\\!\\left(\\frac{t-kT}{\\tau}\\right), $$\nquale delle seguenti affermazioni \\`e vera?",
     "choices": [
       "il segnale ha uno spettro ricco",
       "il segnale ha durata finita",
@@ -421,7 +421,7 @@
     "id": "Q033",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Dato il sistema\n\\[\ny(t)=\\frac{1}{T}\\int_{t-T}^{t} x(\\tau)\\,d\\tau,\n\\]\nla risposta in frequenza del sistema \\`e:",
+    "statement": "Dato il sistema\n$$ y(t)=\\frac{1}{T}\\int_{t-T}^{t} x(\\tau)\\,d\\tau, $$\nla risposta in frequenza del sistema \\`e:",
     "choices": [
       "il sistema non \\`e lineare e non ammette risposta in frequenza",
       "il sistema non \\`e stazionario e non ammette risposta in frequenza",
@@ -435,7 +435,7 @@
     "id": "Q034",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri l'operazione di quantizzazione di un segnale mediante un quantizzatore uniforme con un numero di bit per rappresentare i valori quantizzati. Quale delle seguenti affermazioni \\textbf{non} \\`e vera?",
+    "statement": "Si consideri l'operazione di quantizzazione di un segnale mediante un quantizzatore uniforme con un numero di bit per rappresentare i valori quantizzati. Quale delle seguenti affermazioni <b>non</b> \\`e vera?",
     "choices": [
       "se il numero dei livelli quantici \\`e elevato, il rapporto segnale-rumore di quantizzazione aumenta di $6$ dB per ogni bit utilizzato per rappresentare i valori quantizzati",
       "se il numero dei livelli quantici \\`e elevato, il rapporto segnale-rumore di quantizzazione $S/N_Q$ \\`e una funzione esponenziale del numero di bit utilizzato per rappresentare il valore quantizzato",
@@ -449,7 +449,7 @@
     "id": "Q035",
     "category": "TLC",
     "type": "open",
-    "statement": "Scrivere lo spettro (PSD) del codice di linea unipolare RZ.\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]\n% =========================\n% Pagina successiva (dopo D35)\n% =========================",
+    "statement": "Scrivere lo spettro (PSD) del codice di linea unipolare RZ.",
     "answer": null,
     "solution": "Risposta dettata: $\\frac{1}{2}\\left[T_B\\left(\\frac{\\sin(\\pi f T_B)}{\\pi f T_B}\\right)+\\delta(f)\\right]$."
   },
@@ -457,7 +457,7 @@
     "id": "Q036",
     "category": "TLC",
     "type": "mcq",
-    "statement": "A quale tecnica di modulazione digitale corrisponde:\n\\[\nP_e = Q\\!\\left(\\sqrt{\\frac{2\\,S_{\\mathrm{AV}}\\,T_B}{\\eta}}\\right)\\,?\n\\]",
+    "statement": "A quale tecnica di modulazione digitale corrisponde:\n$$ P_e = Q\\!\\left(\\sqrt{\\frac{2\\,S_{AV}\\,T_B}{\\eta}}\\right)\\,? $$",
     "choices": [
       "ASK",
       "FSK",
@@ -471,7 +471,7 @@
     "id": "Q037",
     "category": "TLC",
     "type": "open",
-    "statement": "In un impulso a coseno rialzato, a quanto \\`e uguale $\\beta$?\n\\[\n\\text{(Scrivi qui la risposta)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "statement": "In un impulso a coseno rialzato, a quanto \\`e uguale $\\beta$?",
     "answer": null,
     "solution": "Risposta dettata: $\\beta$ compreso tra $0$ e $R_B/2$."
   },
@@ -521,7 +521,7 @@
     "id": "Q041",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Dato un SLS caratterizzato da risposta in frequenza\n\\[\nH(f)=G(f)\\,e^{j\\theta(f)},\n\\]\nquando tale sistema non introduce distorsioni di ampiezza?\n% =========================\n% Pagina successiva (dopo D41)\n% =========================",
+    "statement": "Dato un SLS caratterizzato da risposta in frequenza\n$$ H(f)=G(f)\\,e^{j\\theta(f)}, $$\nquando tale sistema non introduce distorsioni di ampiezza?",
     "choices": [
       "quando $G(f)=2\\pi k f_0$",
       "quando $G(f)=K$",
@@ -535,7 +535,7 @@
     "id": "Q042",
     "category": "TLC",
     "type": "open",
-    "statement": "Si consideri la quantizzazione uniforme di un segnale $x(t)$. Scrivere l'equazione che lega il rapporto segnale-rumore di quantizzazione $(S/N)_Q$ al numero di bit di quantizzazione $b$.\n\\[\n\\text{(Scrivi qui l'equazione)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "statement": "Si consideri la quantizzazione uniforme di un segnale $x(t)$. Scrivere l'equazione che lega il rapporto segnale-rumore di quantizzazione $(S/N)_Q$ al numero di bit di quantizzazione $b$.",
     "answer": null,
     "solution": "$(S/N)_Q = 2^{2B}$."
   },
@@ -543,7 +543,7 @@
     "id": "Q043",
     "category": "TLC",
     "type": "open",
-    "statement": "Si consideri la quantizzazione non uniforme di un segnale $x(t)$. Scrivere l'equazione che lega il rapporto segnale-rumore di quantizzazione $(S/N)_Q$ al numero di bit di quantizzazione $b$.\n\\[\n\\text{(Scrivi qui l'equazione)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "statement": "Si consideri la quantizzazione non uniforme di un segnale $x(t)$. Scrivere l'equazione che lega il rapporto segnale-rumore di quantizzazione $(S/N)_Q$ al numero di bit di quantizzazione $b$.",
     "answer": null,
     "solution": "Risposta dettata: $(S/N)_Q = 5 + 6B + L_X$."
   },
@@ -593,7 +593,7 @@
     "id": "Q047",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Se un sistema \\`e caratterizzato dalla seguente relazione ingresso-uscita:\n\\[\ny(t)=\\int_{-\\infty}^{t} x(\\tau)\\,d\\tau,\n\\]\nquale delle seguenti affermazioni \\`e falsa?\n% =========================\n% Pagina successiva (dopo D47)\n% =========================",
+    "statement": "Se un sistema \\`e caratterizzato dalla seguente relazione ingresso-uscita:\n$$ y(t)=\\int_{-\\infty}^{t} x(\\tau)\\,d\\tau, $$\nquale delle seguenti affermazioni \\`e falsa?",
     "choices": [
       "il sistema \\`e lineare",
       "il sistema \\`e causale",
@@ -652,7 +652,7 @@
     "id": "Q051",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Dall'analisi delle funzioni di autocorrelazione dei segnali $x(t)$ e $y(t)$ sopra riportate, si pu\\`o concludere che:\n% =========================\n% Pagina successiva (dopo D51)\n% =========================",
+    "statement": "Dall'analisi delle funzioni di autocorrelazione dei segnali $x(t)$ e $y(t)$ sopra riportate, si pu\\`o concludere che:",
     "choices": [
       "il segnale $x(t)$ ha una durata maggiore del segnale $y(t)$",
       "il segnale $y(t)$ ha una banda maggiore del segnale $x(t)$",
@@ -680,7 +680,7 @@
     "id": "Q053",
     "category": "TLC",
     "type": "open",
-    "statement": "Utilizzando quale frequenza si \\`e ottenuto di minimizzare il fenomeno dell'aliasing?\n\\[\nf_s = \\underline{\\hspace{6cm}}\n\\]",
+    "statement": "Utilizzando quale frequenza si \\`e ottenuto di minimizzare il fenomeno dell'aliasing?",
     "answer": null,
     "solution": "Risposta dettata: $f_A$."
   },
@@ -688,25 +688,25 @@
     "id": "Q054",
     "category": "TLC",
     "type": "open",
-    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea \\textbf{polare NRZ}?\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea <b>polare NRZ</b>?",
     "answer": null,
-    "solution": "Risposta dettata (polare NRZ): $S_{xx}(f)=A^2\\,T_B\\,\\mathrm{sinc}^2(fT_B)$."
+    "solution": "Risposta dettata (polare NRZ): $S_{xx}(f)=A^2\\,T_B\\,sinc^2(fT_B)$."
   },
   {
     "id": "Q055",
     "category": "TLC",
     "type": "open",
-    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea \\textbf{unipolare NRZ}?\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea <b>unipolare NRZ</b>?",
     "answer": null,
-    "solution": "Risposta dettata (unipolare NRZ): $S_{xx}(f)=\\frac{A^2T_B}{4}\\,\\mathrm{sinc}^2(fT_B)\\left[1+\\frac{1}{T_B}\\delta(f)\\right]$."
+    "solution": "Risposta dettata (unipolare NRZ): $S_{xx}(f)=\\frac{A^2T_B}{4}\\,sinc^2(fT_B)\\left[1+\\frac{1}{T_B}\\delta(f)\\right]$."
   },
   {
     "id": "Q056",
     "category": "TLC",
     "type": "open",
-    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea \\textbf{Manchester NRZ}?\n\\[\n\\text{(Scrivi qui la PSD)}\\quad \\underline{\\hspace{8cm}}\n\\]\n% =========================\n% Sezione MATLAB (dopo D56)\n% =========================",
+    "statement": "Qual \\`e l'espressione della densit\\`a spettrale di potenza (PSD) del codice di linea <b>Manchester NRZ</b>?",
     "answer": null,
-    "solution": "Risposta dettata (Manchester NRZ): $S_{xx}(f)=A^2T_B\\,\\mathrm{sinc}^2\\!\\left(\\frac{fT_B}{2}\\right)\\sin^2\\!\\left(\\pi f\\frac{T_B}{2}\\right)$."
+    "solution": "Risposta dettata (Manchester NRZ): $S_{xx}(f)=A^2T_B\\,sinc^2\\!\\left(\\frac{fT_B}{2}\\right)\\sin^2\\!\\left(\\pi f\\frac{T_B}{2}\\right)$."
   },
   {
     "id": "Q057",
@@ -726,12 +726,12 @@
     "id": "Q058",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Per creare un vettore colonna di tutti $0$, di dimensione pari al vettore \\texttt{A}, si deve scrivere la seguente istruzione:",
+    "statement": "Per creare un vettore colonna di tutti $0$, di dimensione pari al vettore <code>A</code>, si deve scrivere la seguente istruzione:",
     "choices": [
-      "\\texttt{zeros(A,1)}",
-      "\\texttt{zeros(length(A),1)}",
-      "\\texttt{zeros(1,A)}",
-      "\\texttt{zeros(1,length(A))}"
+      "<code>zeros(A,1)</code>",
+      "<code>zeros(length(A),1)</code>",
+      "<code>zeros(1,A)</code>",
+      "<code>zeros(1,length(A))</code>"
     ],
     "answer": "d",
     "solution": ""
@@ -740,12 +740,12 @@
     "id": "Q059",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Per creare un vettore riga di tutti $0$, di dimensione pari al vettore \\texttt{A}, si deve scrivere la seguente istruzione:",
+    "statement": "Per creare un vettore riga di tutti $0$, di dimensione pari al vettore <code>A</code>, si deve scrivere la seguente istruzione:",
     "choices": [
-      "\\texttt{zeros(A,1)}",
-      "\\texttt{zeros(length(A),1)}",
-      "\\texttt{zeros(1,A)}",
-      "\\texttt{zeros(1,length(A))}"
+      "<code>zeros(A,1)</code>",
+      "<code>zeros(length(A),1)</code>",
+      "<code>zeros(1,A)</code>",
+      "<code>zeros(1,length(A))</code>"
     ],
     "answer": "b",
     "solution": ""
@@ -754,12 +754,12 @@
     "id": "Q060",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dato un vettore \\texttt{A} di dimensione $1\\times 1000$ all'interno del quale sono memorizzati i campioni di un segnale, per estrarre i primi $100$ campioni:",
+    "statement": "Dato un vettore <code>A</code> di dimensione $1\\times 1000$ all'interno del quale sono memorizzati i campioni di un segnale, per estrarre i primi $100$ campioni:",
     "choices": [
-      "\\texttt{A(1,100)}",
-      "\\texttt{A(1:100)}",
-      "\\texttt{A(0100)}",
-      "\\texttt{A(1)*A(100)}"
+      "<code>A(1,100)</code>",
+      "<code>A(1:100)</code>",
+      "<code>A(0100)</code>",
+      "<code>A(1)*A(100)</code>"
     ],
     "answer": "b",
     "solution": ""
@@ -768,12 +768,12 @@
     "id": "Q061",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Un filtro a media mobile di durata $0{,}3$ s, considerando un passo di campionamento di $5$ ms, pu\\`o essere definito come:\n% =========================\n% Sezione MATLAB (continua dopo D61)\n% =========================",
+    "statement": "Un filtro a media mobile di durata $0{,}3$ s, considerando un passo di campionamento di $5$ ms, pu\\`o essere definito come:",
     "choices": [
-      "\\texttt{ones(0.3/0.5)}",
-      "\\texttt{filt(0.3,0.5)}",
-      "\\texttt{ones(1,0.3/0.5)}",
-      "\\texttt{ones(1,0.3/0.5)/0.3}"
+      "<code>ones(0.3/0.5)</code>",
+      "<code>filt(0.3,0.5)</code>",
+      "<code>ones(1,0.3/0.5)</code>",
+      "<code>ones(1,0.3/0.5)/0.3</code>"
     ],
     "answer": "d",
     "solution": ""
@@ -782,12 +782,12 @@
     "id": "Q062",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dati due segnali \\texttt{s1} e \\texttt{s2} definiti nell'intervallo \\texttt{0:0.01:5}, l'istruzione corretta per calcolare la convoluzione di due segnali \\`e:",
+    "statement": "Dati due segnali <code>s1</code> e <code>s2</code> definiti nell'intervallo <code>0:0.01:5</code>, l'istruzione corretta per calcolare la convoluzione di due segnali \\`e:",
     "choices": [
-      "\\texttt{conv(s1*s2)}",
-      "\\texttt{conv(s1,s2)*0.01}",
-      "\\texttt{conv(s1,s2)}",
-      "\\texttt{convv(s1*s2)*0.01}"
+      "<code>conv(s1*s2)</code>",
+      "<code>conv(s1,s2)*0.01</code>",
+      "<code>conv(s1,s2)</code>",
+      "<code>convv(s1*s2)*0.01</code>"
     ],
     "answer": "b",
     "solution": ""
@@ -796,12 +796,12 @@
     "id": "Q063",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dato il vettore \\texttt{a = [2 3 5 7 1 9]}, l'istruzione \\texttt{find(a>4 \\& a<8)} restituisce:",
+    "statement": "Dato il vettore <code>a = [2 3 5 7 1 9]</code>, l'istruzione <code>find(a>4 \\& a<8)</code> restituisce:",
     "choices": [
-      "\\texttt{[3 4]}",
-      "\\texttt{[5 7]}",
-      "\\texttt{[2 3]}",
-      "\\texttt{[3 5 7]}"
+      "<code>[3 4]</code>",
+      "<code>[5 7]</code>",
+      "<code>[2 3]</code>",
+      "<code>[3 5 7]</code>"
     ],
     "answer": "a",
     "solution": ""
@@ -810,12 +810,12 @@
     "id": "Q064",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Il segnale di convoluzione di due funzioni \\texttt{rect} definite nell'intervallo \\texttt{0:0.02:5} \\`e definito nell'intervallo:",
+    "statement": "Il segnale di convoluzione di due funzioni <code>rect</code> definite nell'intervallo <code>0:0.02:5</code> \\`e definito nell'intervallo:",
     "choices": [
-      "\\texttt{0:0.2:10}",
-      "\\texttt{0:0.2:5}",
-      "\\texttt{0:0.4:10}",
-      "\\texttt{0:10}"
+      "<code>0:0.2:10</code>",
+      "<code>0:0.2:5</code>",
+      "<code>0:0.4:10</code>",
+      "<code>0:10</code>"
     ],
     "answer": "a",
     "solution": ""
@@ -824,12 +824,12 @@
     "id": "Q065",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "La prima riga del file che definisce la funzione denominata \\texttt{compute}, che accetta tre parametri in input e genera due parametri in output, \\`e:",
+    "statement": "La prima riga del file che definisce la funzione denominata <code>compute</code>, che accetta tre parametri in input e genera due parametri in output, \\`e:",
     "choices": [
-      "\\texttt{[a b c] = compute(d,e)}",
-      "\\texttt{[a,b] = compute(c,d,e)}",
-      "\\texttt{function [a,b,c] = compute(d,e)}",
-      "\\texttt{function [a,b] = compute(c,d,e)}"
+      "<code>[a b c] = compute(d,e)</code>",
+      "<code>[a,b] = compute(c,d,e)</code>",
+      "<code>function [a,b,c] = compute(d,e)</code>",
+      "<code>function [a,b] = compute(c,d,e)</code>"
     ],
     "answer": "d",
     "solution": ""
@@ -838,12 +838,12 @@
     "id": "Q066",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dato un vettore \\texttt{a} che rappresenta $500$ campioni di un segnale, per estrarre i campioni che vanno dal $10$ al $100$ si scrive:\n% =========================\n% Sezione MATLAB (continua dopo D66)\n% =========================",
+    "statement": "Dato un vettore <code>a</code> che rappresenta $500$ campioni di un segnale, per estrarre i campioni che vanno dal $10$ al $100$ si scrive:",
     "choices": [
-      "\\texttt{a(10:100)}",
-      "\\texttt{a(10):a(100)}",
-      "\\texttt{a(10,100,500)}",
-      "\\texttt{a(10,100)}"
+      "<code>a(10:100)</code>",
+      "<code>a(10):a(100)</code>",
+      "<code>a(10,100,500)</code>",
+      "<code>a(10,100)</code>"
     ],
     "answer": "a",
     "solution": ""
@@ -866,12 +866,12 @@
     "id": "Q068",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Per cercare gli indici del vettore \\texttt{X} in corrispondenza dei quali si hanno valori minori di $0$, bisogna calcolare:",
+    "statement": "Per cercare gli indici del vettore <code>X</code> in corrispondenza dei quali si hanno valori minori di $0$, bisogna calcolare:",
     "choices": [
-      "\\texttt{find(X)<0}",
-      "\\texttt{find(X<0)}",
-      "\\texttt{find(X>0)}",
-      "\\texttt{find = X<0}"
+      "<code>find(X)<0</code>",
+      "<code>find(X<0)</code>",
+      "<code>find(X>0)</code>",
+      "<code>find = X<0</code>"
     ],
     "answer": "b",
     "solution": ""
@@ -880,12 +880,12 @@
     "id": "Q069",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Un disturbo con distribuzione normale in funzione della variabile indipendente \\texttt{T}, media $0$ e varianza $5$, pu\\`o essere rappresentato come:",
+    "statement": "Un disturbo con distribuzione normale in funzione della variabile indipendente <code>T</code>, media $0$ e varianza $5$, pu\\`o essere rappresentato come:",
     "choices": [
-      "\\texttt{randn(1)*sqrt(2)}",
-      "\\texttt{randn(size(T))*sqrt(2)}",
-      "\\texttt{randn(size(T))*sqrt(2)}",
-      "\\texttt{rand(size(T))*sqrt(2)}"
+      "<code>randn(1)*sqrt(2)</code>",
+      "<code>randn(size(T))*sqrt(2)</code>",
+      "<code>randn(size(T))*sqrt(2)</code>",
+      "<code>rand(size(T))*sqrt(2)</code>"
     ],
     "answer": "c",
     "solution": ""
@@ -894,11 +894,11 @@
     "id": "Q070",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Perch\\'e l'istruzione \\texttt{plot(X,A)} venga correttamente eseguita:",
+    "statement": "Perch\\'e l'istruzione <code>plot(X,A)</code> venga correttamente eseguita:",
     "choices": [
-      "\\texttt{A} pu\\`o essere una matrice di dimensione qualsiasi",
-      "\\texttt{A} deve essere un vettore della stessa dimensione di \\texttt{X}",
-      "\\texttt{A} \\`e una matrice avente una dimensione congruente con la dimensione di \\texttt{X}",
+      "<code>A</code> pu\\`o essere una matrice di dimensione qualsiasi",
+      "<code>A</code> deve essere un vettore della stessa dimensione di <code>X</code>",
+      "<code>A</code> \\`e una matrice avente una dimensione congruente con la dimensione di <code>X</code>",
       "nessuna delle precedenti"
     ],
     "answer": "b",
@@ -910,10 +910,10 @@
     "type": "mcq",
     "statement": "Dato un segnale descritto dai vettori $(n_y,y)$, la sua trasformata di Fourier centrata in $0$ si calcola come:",
     "choices": [
-      "\\texttt{fftshift(fft(ny))}",
-      "\\texttt{fft(ny)}",
-      "\\texttt{fft(y)}",
-      "\\texttt{fftshift(fft(y))}"
+      "<code>fftshift(fft(ny))</code>",
+      "<code>fft(ny)</code>",
+      "<code>fft(y)</code>",
+      "<code>fftshift(fft(y))</code>"
     ],
     "answer": "c",
     "solution": ""
@@ -924,10 +924,10 @@
     "type": "mcq",
     "statement": "Dato un vettore riga x che rappresenta 100 campioni di un segnale, per estrarre i campioni che vanno dal 3 al 60 scriverò:",
     "choices": [
-      "\\texttt{x(3,60)}",
-      "\\texttt{x(3:60)}",
-      "\\texttt{x(3):x(60)}",
-      "\\texttt{x(3,60,100)}"
+      "<code>x(3,60)</code>",
+      "<code>x(3:60)</code>",
+      "<code>x(3):x(60)</code>",
+      "<code>x(3,60,100)</code>"
     ],
     "answer": "b",
     "solution": ""
@@ -936,12 +936,12 @@
     "id": "Q073",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Per creare un vettore colonna di tutti $1$ di dimensione pari al vettore \\texttt{x}, si deve scrivere la seguente istruzione:",
+    "statement": "Per creare un vettore colonna di tutti $1$ di dimensione pari al vettore <code>x</code>, si deve scrivere la seguente istruzione:",
     "choices": [
-      "\\texttt{ones(1,x)}",
-      "\\texttt{ones(1,length(x))}",
-      "\\texttt{ones(x,1)}",
-      "\\texttt{ones(length(x),1)}"
+      "<code>ones(1,x)</code>",
+      "<code>ones(1,length(x))</code>",
+      "<code>ones(x,1)</code>",
+      "<code>ones(length(x),1)</code>"
     ],
     "answer": "b",
     "solution": ""
@@ -950,12 +950,12 @@
     "id": "Q074",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dato il vettore \\texttt{A = [2 13 4 7 1 8]}, l'istruzione \\texttt{find(A>=8)} restituisce:",
+    "statement": "Dato il vettore <code>A = [2 13 4 7 1 8]</code>, l'istruzione <code>find(A>=8)</code> restituisce:",
     "choices": [
-      "\\texttt{[2]}",
-      "\\texttt{[2 6]}",
-      "\\texttt{[13 8]}",
-      "\\texttt{[13]}"
+      "<code>[2]</code>",
+      "<code>[2 6]</code>",
+      "<code>[13 8]</code>",
+      "<code>[13]</code>"
     ],
     "answer": "b",
     "solution": ""
@@ -966,10 +966,10 @@
     "type": "mcq",
     "statement": "Dato il segnale descritto dai vettori (ny,y) (con ny variabile indipendente e y variabile dipendente), la sua trasformata di Fourier centrata in 1/(2T) si calcola come:",
     "choices": [
-      "\\texttt{fftshift(fft(ny))}",
-      "\\texttt{fft(ny)}",
-      "\\texttt{fft(y)}",
-      "\\texttt{fftshift(fft(y))}"
+      "<code>fftshift(fft(ny))</code>",
+      "<code>fft(ny)</code>",
+      "<code>fft(y)</code>",
+      "<code>fftshift(fft(y))</code>"
     ],
     "answer": "d",
     "solution": ""

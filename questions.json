@@ -120,7 +120,7 @@
     "statement": "In corrispondenza di quali valori della frequenza (tra quelli riportati) si annulla lo spettro di potenza (PSD) del codice di linea unipolare Return-to-Zero (RZ)? (Sia $R_B$ il bitrate.)",
     "choices": [
       "$0$",
-      "$\\dfrac{2}{R_B}$",
+      "$\\2R_B$",
       "$R_B$",
       "due dei tre valori elencati sopra"
     ],
@@ -712,7 +712,7 @@
     "id": "Q057",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dato un segnale descritto dai vettori $(n_x,x)$ (con $n_x$ variabile indipendente), il segnale traslato di tre campioni a sinistra si definisce tramite la seguente coppia di vettori:",
+    "statement": "Dato un segnale descritto dai vettori $(nx,x)$ (con $nx$ variabile indipendente), il segnale traslato di tre campioni a sinistra si definisce tramite la seguente coppia di vettori:",
     "choices": [
       "$n_y = n_x,\\quad y = x-3$",
       "$n_y = n_x-3,\\quad y = x$",
@@ -852,7 +852,7 @@
     "id": "Q067",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dato il segnale descritto dai vettori $(n_x,x)$ (con $n_x$ variabile indipendente e $x$ variabile dipendente), il segnale descritto dai vettori $n_y=n_x$ e $y=5x$ ha subito l'operazione di:",
+    "statement": "Dato il segnale descritto dai vettori $(nx,x)$ (con $nx$ variabile indipendente e $x$ variabile dipendente), il segnale descritto dai vettori $n_y=n_x$ e $y=5x$ ha subito l'operazione di:",
     "choices": [
       "traslazione di $5$ campioni in avanti",
       "traslazione di $5$ campioni indietro",
@@ -908,7 +908,7 @@
     "id": "Q071",
     "category": "MATLAB",
     "type": "mcq",
-    "statement": "Dato un segnale descritto dai vettori $(n_y,y)$, la sua trasformata di Fourier centrata in $0$ si calcola come:",
+    "statement": "Dato un segnale descritto dai vettori $(ny,y)$, la sua trasformata di Fourier centrata in $0$ si calcola come:",
     "choices": [
       "<code>fftshift(fft(ny))</code>",
       "<code>fft(ny)</code>",

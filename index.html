@@ -177,13 +177,17 @@ document.getElementById('gen').onclick = async () => {
   const bank = await res.json();
 
   const tlc = bank.filter(q => q.category === 'TLC');
+
   const mat = bank.filter(q => q.category === 'MATLAB');
 
-  const quiz = sample(tlc, 20, r).concat(sample(mat, 10, r));
-  // shuffle quiz order
-  const shuffled = sample(quiz, quiz.length, r);
+  const tlcPicked = sample(tlc, 20, r);
+const matPicked = sample(mat, 10, r);
 
-  renderQuiz(shuffled, r);
+// ✅ Ordine richiesto: prima 20 TLC, poi 10 MATLAB
+const quiz = tlcPicked.concat(matPicked);
+
+renderQuiz(quiz, r);
+
 };
 </script>
 </body>

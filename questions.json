@@ -81,7 +81,7 @@
     "id": "Q007",
     "category": "TLC",
     "type": "open",
-    "statement": "Una sequenza di bit viene trasmessa sul canale binario simmetrico dopo essere stata codificata con un codice a ripetizione $(3,1)$. La sequenza ricevuta \\`e: 111 100 001 011",
+    "statement": "Una sequenza di bit viene trasmessa sul canale binario simmetrico dopo essere stata codificata con un codice a ripetizione $(3,1)$. La sequenza ricevuta \\`e 111 100 001 011",
     "answer": null,
     "solution": "Decodifica più probabile: $1001$ (con $\\varepsilon>0{,}5$ si sceglie la minoranza nei terzetti)."
   },

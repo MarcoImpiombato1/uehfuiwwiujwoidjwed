@@ -83,7 +83,7 @@
     "type": "open",
     "statement": "Una sequenza di bit viene trasmessa sul canale binario simmetrico dopo essere stata codificata con un codice a ripetizione $(3,1)$. La sequenza ricevuta \\`e 111 100 001 011",
     "answer": null,
-    "solution": "Decodifica più probabile: $1001$ (con $\\varepsilon>0{,}5$ si sceglie la minoranza nei terzetti)."
+    "solution": "Decodifica più probabile: $0110$ (con $\\varepsilon>0{,}5$ si sceglie la minoranza nei terzetti)."
   },
   {
     "id": "Q008",
@@ -120,7 +120,7 @@
     "statement": "In corrispondenza di quali valori della frequenza (tra quelli riportati) si annulla lo spettro di potenza (PSD) del codice di linea unipolare Return-to-Zero (RZ)? (Sia $R_B$ il bitrate.)",
     "choices": [
       "$0$",
-      "$\\2R_B$",
+      "$2R_B$",
       "$R_B$",
       "due dei tre valori elencati sopra"
     ],
@@ -194,7 +194,7 @@
       "per rappresentare il vettore $\\mathbf{N}$ sono necessarie almeno $n\\log_2(M)$ cifre binarie, essendo $M$ la dimensione dell'alfabeto di sorgente",
       "per rappresentare il vettore $\\mathbf{N}$ sono necessarie almeno $n$ cifre binarie"
     ],
-    "answer": "c",
+    "answer": "a",
     "solution": ""
   },
   {
@@ -209,7 +209,7 @@
       "il sistema \\`e stabile in senso BIBO"
     ],
     "answer": "d",
-    "solution": ""
+    "solution": "È CORRETTA ANCHE LA A"
   },
   {
     "id": "Q017",
@@ -222,7 +222,7 @@
       "$\\sqrt{\\Re\\{X(f)\\}^{2}+\\Im\\{X(f)\\}^{2}}$",
       "nessuna delle precedenti"
     ],
-    "answer": "d",
+    "answer": "c",
     "solution": ""
   },
   {
@@ -314,7 +314,7 @@
       "un segnale di energia",
       "un segnale di potenza"
     ],
-    "answer": "b",
+    "answer": "d",
     "solution": ""
   },
   {
@@ -349,7 +349,7 @@
     "id": "Q027",
     "category": "TLC",
     "type": "mcq",
-    "statement": "Si consideri un sistema caratterizzato dalla relazione ingresso-uscita:\n$$ y(t)=(a+bt)\\,x(t). $$\nQuale delle seguenti affermazioni \\`e vera?",
+    "statement": "Si consideri un sistema caratterizzato dalla relazione ingresso-uscita:\n$$ y(t)=(a+bt)-x(t). $$\nQuale delle seguenti affermazioni \\`e falsa?",
     "choices": [
       "il sistema \\`e lineare",
       "il sistema \\`e causale",
@@ -587,7 +587,7 @@
       "$\\mathcal{F}\\{\\delta(t-3)\\}=e^{-j6\\pi f}$"
     ],
     "answer": "c",
-    "solution": ""
+    "solution": "è corretta anche la B"
   },
   {
     "id": "Q047",
@@ -972,6 +972,48 @@
       "<code>fftshift(fft(y))</code>"
     ],
     "answer": "d",
+    "solution": ""
+  },
+    {
+    "id": "Q076",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "In corrispondenza di quali valori della frequenza (tra quelli riportati) si annulla lo spettro di potenza (PSD) del codice di linea Unipolare Non-Return-to-Zero (NRZ)? (Sia $R_B$ il bitrate.)",
+    "choices": [
+      "$0$",
+      "$2R_B$",
+      "$R_B$",
+      "due dei tre valori elencati sopra"
+    ],
+    "answer": "c",
+    "solution": ""
+  },
+    {
+    "id": "Q077",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "In corrispondenza di quali valori della frequenza (tra quelli riportati) si annulla lo spettro di potenza (PSD) del codice di linea Manchester Non-Return-to-Zero (NRZ)? (Sia $R_B$ il bitrate.)",
+    "choices": [
+      "$0$",
+      "$2R_B$",
+      "$R_B$",
+      "due dei tre valori elencati sopra"
+    ],
+    "answer": "b",
+    "solution": ""
+  },
+    {
+    "id": "Q078",
+    "category": "TLC",
+    "type": "mcq",
+    "statement": "In corrispondenza di quali valori della frequenza (tra quelli riportati) si annulla lo spettro di potenza (PSD) del codice di linea Polare Non-Return-to-Zero (NRZ)? (Sia $R_B$ il bitrate.)",
+    "choices": [
+      "$0$",
+      "$2R_B$",
+      "$R_B$",
+      "due dei tre valori elencati sopra"
+    ],
+    "answer": "c",
     "solution": ""
   }
 ]

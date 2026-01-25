@@ -183,7 +183,7 @@ document.getElementById('gen').onclick = async () => {
   const tlcPicked = sample(tlc, 70, r);
 const matPicked = sample(mat, 18, r);
 
-// ✅ Ordine richiesto: prima 20 TLC, poi 10 MATLAB
+// ✅ Ordine richiesto: prima TLC, poi MATLAB
 const quiz = tlcPicked.concat(matPicked);
 
 renderQuiz(quiz, r);

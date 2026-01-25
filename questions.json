@@ -209,7 +209,7 @@
       "il sistema \\`e stabile in senso BIBO"
     ],
     "answer": "d",
-    "solution": "È CORRETTA ANCHE LA A"
+    "solution": "È CORRETTA ANCHE LINEARE"
   },
   {
     "id": "Q017",
@@ -586,7 +586,10 @@
       "$\\mathcal{F}\\{\\delta(t)*u(t-3)\\}=u(f-3)$",
       "$\\mathcal{F}\\{\\delta(t-3)\\}=e^{-j6\\pi f}$"
     ],
-    "answer": "c",
+    "answer": [
+      "c",
+      "b"
+    ],
     "solution": "è corretta anche la B"
   },
   {

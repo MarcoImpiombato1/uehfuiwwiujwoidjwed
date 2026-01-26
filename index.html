@@ -31,7 +31,7 @@
   <h1>Quiz TLC + MATLAB</h1>
 
   <div class="row">
-    <button id="gen">Genera quiz (TLC + MATLAB)</button>
+    <button id="gen">Genera quiz (20 TLC + 10 MATLAB)</button>
     <label>Seed:
       <input id="seed" type="number" placeholder="opzionale">
     </label>
@@ -180,8 +180,8 @@ document.getElementById('gen').onclick = async () => {
 
   const mat = bank.filter(q => q.category === 'MATLAB');
 
-  const tlcPicked = sample(tlc, 70, r);
-const matPicked = sample(mat, 18, r);
+  const tlcPicked = sample(tlc, 20, r);
+const matPicked = sample(mat, 10, r);
 
 // ✅ Ordine richiesto: prima TLC, poi MATLAB
 const quiz = tlcPicked.concat(matPicked);
